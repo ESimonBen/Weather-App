@@ -1,0 +1,107 @@
+/* General page styling */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Text font */
+    background-color: white; /* Page background */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Form spacing */
+.weatherForm {
+    margin: 20px;
+}
+
+/* Styling for the city input field */
+.cityInput {
+    padding: 10px;
+    font-size: 2rem; /* Large text for readability */
+    font-weight: bold;
+    border: 2px solid hsla(0, 0%, 20%, 0.4); /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px;
+    width: 300px;
+}
+
+/* Search button styling */
+button[type="submit"] {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: hsl(120, 74%, 64%); /* Light green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Show hand icon when hovering */
+}
+
+/* Hover effect for the search button */
+button[type="submit"]:hover {
+    background-color: hsl(120, 74%, 54%);
+}
+
+/* Click (active) effect for the search button */
+button[type="submit"]:active {
+    background-color: hsl(120, 74%, 44%);
+}
+
+/* Weather result card styling */
+.card {
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(50, 100%, 75%)); /* Gradient from blue to yellow */
+    padding: 50px;
+    box-shadow: 2px 2px 5px hsl(0, 1%, 20%); /* Small shadow for depth */
+    border: 2px solid;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+/* Headline size for city name */
+h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* General paragraph styling */
+p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+/* Specific styles for displayed city name and temperature */
+.cityDisplay, .tempDisplay {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75); /* Dark gray */
+    margin-bottom: 25px;
+}
+
+/* Humidity text style */
+.humidityDisplay {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Weather description style (italicized) */
+.descDisplay {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Weather emoji size */
+.emoji {
+    margin: 0;
+    font-size: 7.5rem;
+}
+
+/* Error message style */
+.errorDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+}
