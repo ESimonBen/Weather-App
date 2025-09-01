@@ -2,7 +2,6 @@
 const weatherForm = document.querySelector(".weatherForm"); // The form where user enters the city
 const cityInput = document.querySelector(".cityInput"); // The text input for the city name
 const card = document.querySelector(".card"); // The card where results or errors will be displayed
-const apiKey = "684ac545434d82ec0cb5c36248f4a7dc"; // API key for OpenWeatherMap
 
 // Listen for when the form is submitted
 weatherForm.addEventListener("submit", async event => {
